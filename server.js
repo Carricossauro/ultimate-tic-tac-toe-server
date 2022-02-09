@@ -228,7 +228,7 @@ const INDEX = "/index.html";
 const app = express();
 app.use((req, res) => res.sendFile(INDEX, { root: __dirname }));
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "http://192.168.1.127:3000");
     next();
 });
 
