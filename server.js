@@ -220,7 +220,7 @@ Socket.io only from here and beyond
 ###################################
 */
 
-const io = new Server(3600, {
+const io = new Server(process.env.PORT, {
     cors: {
         origin: "*",
     },
